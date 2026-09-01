@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true">
+    <testsuites>
+        <testsuite name="Test Suite Trajets">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <source>
+        <include>
+            <directory>src</directory>
+        </include>
+        <exclude>
+            <directory>vendor</directory>
+        </exclude>
+    </source>
+
+    <php>
+        <!-- Paramètres de l'environnement pour les tests -->
+        <env name="DB_HOST" value="localhost"/>
+        <env name="DB_NAME" value="agence_covoiturage"/>
+        <env name="DB_USER" value="root"/>
+        <env name="DB_PASS" value=""/>
+    </php>
+
+    <coverage processUncoveredFiles="true">
+        <gli path="src/Model"/>
+        <gli path="controllers"/>
+    </coverage>
+</phpunit>

@@ -1,0 +1,10 @@
+// assets/scss/style.scss
+
+// 1. On importe nos variables personnalisées
+@import 'variables';
+
+// 2. On importe Bootstrap depuis le dossier node_modules
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// 3. importer d'autres composants (BEM, etc.)
+// @import 'components/card';

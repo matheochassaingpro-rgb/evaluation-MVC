@@ -1,0 +1,13 @@
+{
+    "name": "agence/covoiturage",
+    "description": "Application de covoiturage inter-sites pour les employés.",
+    "require": {
+        "php": ">=8.0" 
+        // CORRECTION : Mis à jour de >=7.4 à >=8.0 comme requis.
+    },
+    "autoload": {
+        "psr-4": {
+            "Agence\\": "src/"
+        }
+    }
+}
